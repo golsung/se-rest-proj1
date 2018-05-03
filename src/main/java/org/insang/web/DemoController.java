@@ -41,7 +41,7 @@ public class DemoController {
 		return new ResponseEntity<List<Member>>(allMembers, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="/deleteall", method=RequestMethod.POST)
+	@RequestMapping(value="/deleteall", method=RequestMethod.DELETE)
 	public ResponseEntity<Void> deleteAll() {
 		final List<Member> allMembers = memberService.findAll();
 		if (allMembers.isEmpty())

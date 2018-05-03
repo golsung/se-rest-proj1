@@ -55,6 +55,7 @@ import static org.hamcrest.Matchers.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+//@WebMvcTest(DemoController.class)
 public class DemoControllerTests2 { 
 	
   @MockBean
